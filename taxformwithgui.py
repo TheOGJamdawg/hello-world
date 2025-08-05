@@ -21,7 +21,7 @@ class TaxCalculator(EasyFrame):
         dependents = self.dependentField.getNumber()
 
         baseDeduction = 500
-        taxRate = 0.075 #trial and error trying to figure out what tax rate would match the text
+        taxRate = 0.10 #change to 10% for fun
 
         taxableIncome = max(0.0, income - (baseDeduction * dependents))
         totalTax = taxableIncome * taxRate
